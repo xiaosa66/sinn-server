@@ -15,10 +15,10 @@ import upload from '../middlewares/upload';
 const router = require('koa-router')();
 
 // cors 处理跨域
-// router.all('/api/*', async (ctx,next)=>{  
-//   ctx.set("Access-Control-Allow-Origin", "*");  
-//   await next();  
-// });    
+router.all('/api/*', async (ctx,next)=>{
+  ctx.set("Access-Control-Allow-Origin", "*");
+  await next();
+});
 
   // 前端sinn Api 
 router 
