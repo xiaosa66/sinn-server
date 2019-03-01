@@ -20,7 +20,7 @@ module.exports={
      mongo: {
         uri: 'mongodb://localhost:27017/test'
       },
-     port: '8080',
+     port: '8084',
      qiniu: {  // 七牛云sdk配置 (仅供参考)
        ACCESS_KEY: '授权key',   // 示例：'SVDBGFNHBFSBFDNGSBRSVFDV'
        SECRET_KEY: '秘钥key',   // 示例：'XVDFNBDNTWGECdterfnfdvac345edfv'

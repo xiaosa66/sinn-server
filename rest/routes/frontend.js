@@ -17,6 +17,7 @@ const router = require('koa-router')();
 // cors 处理跨域
 router.all('/api/*', async (ctx,next)=>{
   ctx.set("Access-Control-Allow-Origin", "*");
+  ctx.set("Access-Control-Allow-Methods","POST,PUT, GET, DELETE,OPTIONS");
   await next();
 });
 
