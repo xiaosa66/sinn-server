@@ -18,7 +18,7 @@ module.exports={
   // 开发环境配置
   development: {
      mongo: {
-        uri: 'mongodb://localhost:27017/test'
+        uri: 'mongodb://localhost:27017/MALL_VUE'
       },
      port: '8084',
      qiniu: {  // 七牛云sdk配置 (仅供参考)

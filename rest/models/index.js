@@ -4,6 +4,7 @@ import CategoryModel from './article/category.model';
 import TopCategoryModel from './article/topcategory.model';
 import UserModel from './user/user.model';
 import AdminUserModel from './user/admin.model';
+import indexSectionModel from './indexSection.model';          // todo 为什么要在这里引入在导出???
 
 export {
    CommentModel,
@@ -11,5 +12,6 @@ export {
    CategoryModel,
    TopCategoryModel,
    UserModel,
-   AdminUserModel
+   AdminUserModel,
+   indexSectionModel
 }
