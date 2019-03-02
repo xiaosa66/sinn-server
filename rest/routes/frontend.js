@@ -29,7 +29,7 @@ router
   .get('/api/article/get_detail',ArticleController.get_detail)                         // 获取文章详情
   .get('/api/article/get_category',ArticleController.get_category)                     // 获取文章类别
   .get('/api/article/getmenu_category',ArticleController.getmenu_category)             // 获取菜单列表
-  .get('/api/index/section', IndexController.getIndexSection)                // 上传首页section
+  .get('/api/index/section', IndexController.getIndexSection)                          // 获取首页section
   .post('/api/index/section_upload', IndexController.postIndexSection)                // 上传首页section
   .post('/api/article/create_upload', upload.alioss, ArticleController.create_upload)  // 上传文章封面图
   .post('/api/article/create',ArticleController.create)                                // 发表文章

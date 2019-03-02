@@ -59,7 +59,7 @@ class IndexController {
     let { title } = ctx.query;
     let result = null;
     if (!title) {
-      result = await indexSectionModel.find();
+      result = await indexSectionModel.find(); // todo 如果只有一个  应该输出[{}]
     } else {
       result = await indexSectionModel.findOne({ title });
     }
