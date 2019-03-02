@@ -59,7 +59,7 @@ class IndexController {
     let { title } = ctx.query;
     let result = null;
     if (!title) {
-      result = await indexSectionModel.findOne({});
+      result = await indexSectionModel.find();
     } else {
       result = await indexSectionModel.findOne({ title });
     }
