@@ -5,10 +5,11 @@
 * @ use 首页及主要模块接口逻辑层
 */ 
 
-import { UserModel } from '../../models/index';
+
 import mongoose from 'mongoose';
 import moment from 'moment';
 const ArticleModel = mongoose.model('Article');
+const indexSectionModel = mongoose.model('indexSection');
 
 class IndexController {
   
@@ -54,6 +55,15 @@ class IndexController {
    return ctx.success({ data:{ lists,hot,catehot,totals,current } });
   }
   
+  static async getIndexSection(){
+    
+  }
+  static async postIndexSection(ctx){
+    let postData = ctx.query;
+    console.log('postData:',postData);
+  }
+
 }
+
 
 export default IndexController;
